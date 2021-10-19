@@ -97,6 +97,21 @@ const getFileExtension = (file) => {
   if (contentType == "image/jpeg") {
     return "jpg";
   }
-
+  if (contentType == "image/png") {
+    return "png";
+  }
+  if (contentType == "text/html") {
+    return "html";
+  }
+  if (contentType == "text/css") {
+    return "css";
+  }
+  if (contentType == "application/javascript") {
+    return "javascript";
+  }
+  if (contentType == "application/json") {
+    return "json";
+  }
+  
   throw new Error(`Unsupported content type "${contentType}".`);
 };
